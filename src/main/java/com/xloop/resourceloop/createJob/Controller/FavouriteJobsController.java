@@ -28,7 +28,7 @@ public class FavouriteJobsController {
         return ResponseEntity.ok(favouriteJobs);
     }
 
-    @DeleteMapping("/{userId}/{jobId}")
+    @DeleteMapping("/remove/{userId}/{jobId}")
     public ResponseEntity<Void> removeFavouriteJob(@PathVariable Long userId, @PathVariable Long jobId) {
         favouriteJobService.removeFavouriteJob(userId, jobId);
         return ResponseEntity.noContent().build();
