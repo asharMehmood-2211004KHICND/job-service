@@ -21,7 +21,7 @@ import com.xloop.resourceloop.createJob.Service.DropDownService.EducationService
 @RequestMapping("/education")
 @CrossOrigin(origins = "${app.cors.origin:'http://localhost:3000'}")
 public class EducationController {
-    
+    // git test comment
     @Autowired
     private EducationService educationService;
 
